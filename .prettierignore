@@ -1,0 +1,7 @@
+drizzle
+data
+src/components/ui
+.tmp
+test-results
+playwright-report
+next-env.d.ts
