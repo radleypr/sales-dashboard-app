@@ -1,8 +1,8 @@
 # Ledgerline — Build Plan & Gates
 
 This is the build plan. It is ordered, and every phase ends with a **Gate**: a phase is done only when the
-gate results match. Work from the **repository root** of your fork (the directory that contains this file), with
-`SPEC` pointing to the same directory and Node 24 first on `PATH`.
+gate results match. Work from the **repository root** of your private working repository (the directory that
+contains this file), with `SPEC` pointing to the same directory and Node 24 first on `PATH`.
 
 ## 1. Build Approach
 
@@ -20,7 +20,7 @@ gate results match. Work from the **repository root** of your fork (the director
 Shell setup used by every phase:
 
 ```bash
-export SPEC="$(pwd)"                             # the root of your fork
+export SPEC="$(pwd)"                             # the root of your working repository
 export PATH="/path/to/node24/bin:$PATH"          # only if your default node is not v24
 mkdir -p .tmp
 ```
