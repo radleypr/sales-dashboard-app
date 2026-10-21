@@ -9,8 +9,14 @@ Drizzle + better-sqlite3. One person records sales, products and customers on th
 charts, insights, analytics and CSV exports. There is no authentication, no cloud, no FX conversion and no inventory
 tracking.
 
-This repository holds the **specification and build plan**. The app is built in a separate, empty directory by
-following [`BUILD_PLAN.md`](BUILD_PLAN.md). No application code is included; every file is written from the specs.
+This public repository is the **starting guide**: it holds the specification and build plan. Fork it on GitHub and
+build the app inside your fork, at the repository root and alongside these documents, by following
+[`BUILD_PLAN.md`](BUILD_PLAN.md). The public upstream stays documentation-only; every application file is written
+from the specs in your copy.
+
+Where [`BUILD_PLAN.md`](BUILD_PLAN.md) refers to the **app root**, read the root of your fork (the directory that
+contains this file). The spec files under `docs/spec/` are already there and stay in place; Phase 8 replaces only
+the root `README.md` with the app's user guide.
 
 ## Reading order
 
@@ -33,7 +39,9 @@ resolve in the build report.
 
 ## Current state
 
-- Greenfield. The app directory starts empty.
+- Greenfield. The specification is complete; the app is built at the root of your fork, beside the docs.
+- The public upstream is documentation-only. Commit application code to your own fork (on a working branch, if you
+  prefer), never to the public starting guide.
 - All architecture decisions are closed (see `ARCHITECTURE.md`, Appendix A). The work is implementation and
   verification against the specs, not product design.
 
